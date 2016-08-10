@@ -1,0 +1,267 @@
+/* Colors */
+
+@black-60: rgba(0,0,0,0.6);
+@black-32: rgba(0, 0, 0, 0.32);
+@near-white: rgba(0,0,0,0.02);
+@light-red: #fcb1b1;
+@light-red-2: rgba(252, 177, 177, 0.4);
+
+/* Text styles */
+
+.display-regular {
+	font-family: 'EB Garamond', Georgia, serif;
+	font-size: 48px;
+	color: @black-60;
+	@media (max-width: 500px) {
+		font-size: 40px;
+	}
+}
+
+.display-light {
+	font-family: 'EB Garamond', Georgia, serif;
+	font-size: 48px;
+	color: @black-32;
+	@media (max-width: 500px) {
+		font-size: 40px;
+	}
+}
+
+.serif-header {
+	font-family: 'EB Garamond', Georgia, serif;
+	font-size: 26px;
+	color: @black-60;
+}
+
+.serif {
+	font-family: 'EB Garamond', Georgia, serif;
+	font-size: 16px;
+	color: @black-60;
+}
+
+.sans-serif-header {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1.8;
+	color: @black-60;
+}
+
+.body-font {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.8;
+	color: @black-60;
+}
+
+/*----- mix ins -----------*/
+
+.transition-all {
+	transition: all .2s ease;
+}
+
+.transition-color {
+	transition: color .2s ease;
+}
+
+
+/*-----------------------*/
+
+
+body {
+	height: 100vh;
+	/*min-width: 960px;*/
+	background-color: @near-white;
+	-webkit-font-smoothing: antialiased;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	@media (max-width: 540px) {
+			position: relative;
+			height: 0px;
+		}
+	/*min-width: 960px;*/
+	box-sizing: border-box;
+	padding-right: 8%;
+	padding-top: 24px;
+	background-color: rgba(250,250,250,1);
+	nav {
+		.serif;
+		display: flex;
+		justify-content: flex-end;
+		div {
+			/*margin: 0px 24px 0px 24px;*/
+			padding: 8px 16px 16px 16px;
+			.transition-all;
+			background-color: rgba(250,250,250,1);
+		}
+	}
+}
+
+.landing {
+	height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8%;
+	h1 {
+		.display-light;
+		line-height: 1.3;
+		span {
+			.display-regular;
+			box-shadow: 0px 4px 0px 0px @light-red;
+			.transition-color;
+		}
+	}
+}
+
+.project {
+	display: flex;
+    flex-direction: column;
+	h2 {
+		margin: 24px 8% 40px 8%;
+		.serif-header;
+		z-index: 199;
+	}
+}
+
+.other-things {
+	padding-top: 24px;
+	background-color: @black-32;
+	h2 {
+		color: rgba(250,250,250,1);
+		z-index: 199;
+	}
+	.icons {
+		margin-top: 40px;
+		display: flex;
+	    justify-content: space-between;
+	    align-items: flex-end;
+	    width: 100px;
+	    :hover {
+	    	background-color: @light-red;
+	    	cursor: pointer;
+	 		.transition-all;
+	    }
+	}
+}
+
+.divider {
+	width: 128px;
+	height: 4px;
+	background-color: @light-red;
+	margin-left: 8%;
+	z-index: 200;
+}
+
+.image {
+	height: 437px;
+	width: 100%;
+	margin-bottom: 34px;
+	background-color: #1d3745;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	img {
+		height: auto;
+		margin: auto;
+		border: 1px solid rgba(0,0,0,0.04);
+		box-shadow: 0px 4px 6px @black-32;
+		@media (max-width: 960px) {
+			width: 80%;
+		}
+	}
+}
+
+.full-bleed {
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#sprint-image {
+	background-color: #ffffff;
+	background-image: url(images/sprint.png);
+}
+
+.no-shadow img {
+	box-shadow: none;
+	border: none;
+}
+
+.story {
+	margin: 0px auto 84px auto;
+	width: 530px;
+	@media (max-width: 768px) {
+			width: 80%;
+		}
+	h4 {
+		.sans-serif-header;
+		margin: 40px 0 8px 0;
+	}
+	p {
+		.body-font;
+	}
+	.pullout {
+		color: rgba(255,255,255, 0.8);
+	}
+}
+
+#work {
+	z-index: 100;
+	img {
+		padding-left: 8px;
+	}
+}
+
+.hidden {
+	display: none;
+}
+
+.secondary {
+	opacity: 0;
+	margin-right: -40px;
+	width: 8px;
+	height: 16px;
+	@media (max-width: 779px) {
+		display: none;
+	}
+}
+
+.show {
+	opacity: 1;
+	margin-right: 24px;
+	@media (min-width: 780px) and (max-width: 900px) {
+			margin-right: 8px;
+		}
+	@media (max-width: 779px) {
+		display: none;
+	}
+}
+
+.current {
+	box-shadow: inset 0px -4px 0px 0px @light-red-2;
+}
+
+#about.current {
+	width: initial;
+}
+
+#landing-link:hover, nav div:hover {
+	cursor: pointer;
+	color: @light-red;
+	.transition-color;
+}
+
+
+
+
+
+
+
+
+
+
+
+

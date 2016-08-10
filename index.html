@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Ashley Kircher | Product Design</title>
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="stylesheet" type="text/css" href="reset.css" />
+<link rel="stylesheet" type="text/css" href="styles.css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:600,400' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+</head>
+
+<body>
+
+<header>
+	<nav>
+		<div class="secondary" id="project1">1</div>
+		<div class="secondary" id="project2">2</div>
+		<div class="secondary" id="project3">3</div>
+		<div class="secondary" id="project4">4</div>
+		<div class="secondary" id="project5">5</div>
+		<div id="work">Work<img src="images/desktop.svg"></div>	
+		<div id="about">Other things about me</div>
+	</nav>
+</header>
+
+<section class="landing">
+	<h1>Ashley Kircher <span id="landing-link">I&nbsp;build&nbsp;things&nbsp;I&nbsp;design</span></h1>
+</section>
+
+<section class="project">
+	<div id="navigation" class="divider"></div>
+		<h2>Rethinking navigation</h2>
+			<div class="image"><img src="images/navigation.png"></div>
+	<div class="story">		
+		<h4>Backstory</h4>
+			<p>In the beginning of 2016 Chartbeat's design director laid out a plan to unify the UX of our product suite. At the time the leadership of the company had released a plan that outlined a new sales structure that grouped offerings into tiers. One of the major challenges for both of these was cross-product navigation. Products were vastly inconsistent visually and there were multiple navigation structures. From a brand and design standpoint this was a sore spot. From a sales perspective, this disjointedness represented a missed opportunity to facilitate upsells from the basic offering to a more premium group of products. Over the course of several weeks I worked closely with the design director to put together a proposal for a new unified navigation system.</p>
+				<h4>Process</h4>
+					<p>The first step was to establish a baseline and make our case to the executive team. To do so I performed an audit of the existing navigation structures, and pulled inspiration from other companies with tiered product systems for guidance on how we might indicate upsell opportunities to users.
+					<br><br>
+					One of our major considerations was incremental implementation, so we decided on a navigation system that could be broken up into smaller pieces. After defining all the necessary elements &mdash; global versus product specific, primary versus secondary in the hierarchy &mdash; I explored different modular structures and visual treatments.</p>
+
+				<h4>Result</h4>
+			<p>The resulting proposed design was anchored by a colored header, the color of which could expand into a sub-brand for the particular product. Within the header would be displayed a logo lock-up with the user's current tier, as well as the title of the currently viewed product and subsection if applicable. Each product would have 3 global secondary functions: switching between products, switching between domains, and accessing global settings. The list of products to switch between would contain products not yet purchased, labeled as 'premium,' and allow the user to navigate to pages containing more information.
+			<br><br>
+			Each product had different levels of filtering available, some not at all, and some could be filtered by multiple facets. To accommodate this variation filters (by tag, section, date range, etc.) would be contained in a bar beneath the global header in products where they were available. An additional navigational piece that varied between products was internal navigation. Some products contained multiple internal pages, while others were a single dashboard. In cases where it was needed, an internal navigation menu would be displayed on the same z&ndash;index as the product content itself.</p>
+		</div><!--close story-->
+</section>
+
+<section class="project">
+	<div id="real-data" class="divider"></div>
+		<h2>Designing with real data</h2>
+			<div class="image no-shadow" id="data-image"><img src="images/graphs.png"></div>
+	<div class="story">		
+		<h4>Part One: Graph coloring system and usage</h4>
+			<p>Despite being an analytics and data company our products visualized data sparingly, often opting to stick with numbers and lists. In the course of designing a new product our design team was confronted with unprecedented complexity to visualize. Our established coloring system accommodated visualizing up to 5 distinct entities, or 1 entity with 5 levels of gradation. What was needed in the new product was up to 10 entities and 10 gradations.
+			<br><br>
+			Over the course of a couple weeks I worked through various combinations and systems, the outcome of which was a bit of a compromise between mathematical logic and visual aesthetics. The proposed system outlined 6 hues, and 10 levels of gradation for each. As opposed to simply using gradations 1-2-3 for a three part graph, and 1-2-3-4 for a four part graph and so on, the levels of gradation were outlined such that each combination remained legible.
+			<br><br>
+			While working my way through the coloring system I outlined usage guidelines for different types of data &mdash; for example volume over time versus total volume.</p> 
+
+		<h4>Part Two: Make designing with real data easy</h4>
+			<p>Having a system for colors and usage guidelines was helpful to the team, but mocking up data was still incredibly inefficient. Spurred by a workflow-tool themed Hackweek a frontend developer and I worked to created a Sketch plugin that could help us design with real data. As a template we used the Content Generator plugin. During the week I modified the plugin to include various text-based data for filing in tables with our most frequently displayed metrics. Concurrently my teammate was working to implement a graphing capability, that would allow you to specify the type of graph, size of organization being mocked, and number of points to include. An additional feature was the ability to upload a new .csv file.
+			<br><br>
+			The resulting plugin was a huge step forward in enabling the design team to test their mocks with realistic data. As an added bonus, my teammate and I got the most votes and 'won' Hackweek!</p>
+		</div><!--close story-->
+</section>
+
+<section class="project">
+	<div id="3" class="divider"></div>
+		<h2>Historical reporting</h2>
+			<div class="image no-shadow"><img src="images/cards.png"></div>
+	<div class="story">		
+		<h4>Backstory</h4>
+			<p>Nearly all of Chartbeat's products focused around real-time use cases, or fixed snapshots of previous time periods. After a sales-driven foray into more robust historical reporting limited to a domain's authors, the product team decided to tackle full&ndash;fledged, flexible historical analytics. As the designer of the author reports, I was given the opportunity to lead the design of the historical product.</p>
+				<h4>Research</h4>
+					<p>With a strong and loyal user base, there was generally a good understanding of broadly what our users needed from an historical product. To build up a more in&ndash;depth understanding of their current needs the product manager and myself conducted a series of interviews specifically around the use of historical data in editors' day&ndash;to&ndash;day decision making. 
+					<br><br>
+					Our interviews confirmed our assumption that an historical product would be largely about seeing comparative performance, and about quickly getting a sense of whether or not things were going normally.
+					<br><br>
+					One of the most revealing things to come from this research was the realization that goal&ndash;setting &mdash; something we had been conceptualizing on a quarterly or yearly time scale &mdash; was a nearly hourly activity. We found that editors frequently planned milestones for audience growth, which could be estimated down to the day. Therefore editors would check in multiple times per day to course&ndash;correct based on how closely they were tracking to their goal for that day.</p>
+				<h4>Result</h4>
+					<p>After structural explorations the proposed design was broken into two pages &mdash; one set up as a dashboard for quickly understanding if things were generally on track, the second set up as a granular record of performance. 
+					<br><br>
+					Contained on the dashboard page were the nuanced visualizations of data over time, that specifically displayed past performance against the current performance, as well as the general range of performance. Also on the dashboard were highlighted 'best in category' items, such as the most read story, the highest performer for social audiences, and the most engaging story.
+					<br><br>
+					The second, 'deep dive' page was a data rich table of all the stories within the set time period, showing keys metrics contextualized by relative past performance. Users could apply a variety of filters to further contextualize performance by traffic type, section of the site, and author.
+					<br><br>
+					Future plans included an intelligent system for applying callouts to items that were outliers for certain high&ndash;value metrics, as well as a system for entering and tracking audience growth milestones.</p>
+		</div><!--close story-->
+</section>
+
+<section class="project">
+	<div id="4" class="divider"></div>
+		<h2>Runtime optimization</h2>
+			<div id="parsekit-project" class="image"><img src="images/treemap_1x.png"></div>
+	<div class="story">		
+		<h4>Backstory</h4>
+			<p>Enigma had developed a domain specific language for parsing and ingesting data. As a complement to the language, users were offered a visual interface for debugging and monitoring the runs of their team's parsers. A key component of this were the performance metrics, through which developers could easily pinpoint inefficiencies in their code.</p>
+
+		<h4>Process</h4>
+			<p>The original design of this particular piece of the interface was a heavily nested tree, with previous and following steps hidden from view when looking at a single step. A dynamic donut chart next to the tree would show the percentage breakdown of each step on hover. In general, key labels and information were hidden behind hover states, and removed the context necessary to find inefficiencies quickly. 
+			<br><br>
+			As a solution to this the proposed design was to break the debugging process into two complementary but independent views. Users could choose to view the parser steps in a tree map visualization, with a right-hand legend that would update to whichever step was being hovered over. Or they could choose to view the steps in a table view, whose colors corresponded to those of the tree map. 
+		<h4>Outcome</h4>
+			<p>Ultimately this solution was well&ndash;received by the developers using the tool internally, who found the tree map view much closer to industry standard depictions (as well as pleasant to view) and was adopted in the recent redesign and relaunch of the product.</p>
+		</div><!--close story-->
+</section>
+
+<section class="project">
+	<div id="5" class="divider"></div>
+		<h2>Running a GV Sprint</h2>
+			<div class="image full-bleed" id="sprint-image"></div>
+	<div class="story">		
+		<h4>Backstory</h4>
+			<p>Enigma was revisiting the design of a major product, and specifically looking to improve upon the search experience. After conducting user interviews it became clear that resolving the issues at hand would require significant input from multiple teams. It was also clear that a handful of decisions remained to be made around our prioritized user and their use case. In an effort to efficiently address these things I proposed that we run a Google Ventures style sprint, in which we chose a prioritized user, and built a prototype to test ideas around one aspect of their experience with search.</p>
+				<h4>Process</h4>
+					<p>Having been the one to propose the sprint, I acted as the facilitator throughout the process. This entailed recruiting members from the company to participate, leading discussions and exercises, and generally making sure that as a group we were productive and efficient. Additionally I took on the responsibility of scheduling users to come onsite to test the resultant prototype, and conducted each of the usability tests.
+					<br><br>
+					After the sprint was completed I prepared a presentation for the rest of the company to share an overview of the work we had done and the feedback we had received on our prototype. Additionally I wrote an internal blog post detailing the process and included recommendations for others who were interested in running sprints of their own.</p>
+				<h4>Outcome</h4>
+			<p>This endeavor was successful on many levels. For a product team new to user testing, seeing what could be accomplished through a simple prototype was very powerful. The ideas tested and user feedback were immediately helpful in guiding the redesign. The presentation and accompanying blog post were well&ndash;received, and will serve as beneficial resources for those outside this particular sprint.</p>
+		</div><!--close story-->
+</section>
+
+
+<section class="project other-things" id="other-things">
+	<!-- <div class="divider"></div> -->
+		<h2>Other things about me</h2>
+			<div class="story">
+			<p class="pullout">I'm a New York-based digital product designer, currently at Enigma, previously at Chartbeat. I graduated from the Rhode Island School of Design in 2010 with a BFA in Illustration. Key skills: a knack for turning jargon-y copy into plain friendly English, opinion sharing, question asking, and general good humor. There's a lot of 'scary' data and tech out there, and I aim to design products that make even the most mundane, daunting, or complicated task approachable.</p>
+				<div class="icons"><a href="mailto:ashleywkircher@gmail.com"><img src="images/email.png"></a><a href="https://medium.com/@ashleywkircher"><img src="images/medium.png"></a></div>
+		</div>
+</section>
+
+</body>
+
+<script>
+
+var visualPaddingString = $('header').css('paddingTop'); // this grabs whatever the top padding is for the header element
+var visualPaddingInt = parseInt(visualPaddingString, 10); //parseInt ignores things that aren't integers, so this turns the css value of visualPaddingString and ignores the 'px'
+
+//Check to see if the window is top if not then display 2nd nav
+	$(window).scroll(function(){
+
+		var windowScrollTop = $(window).scrollTop();
+		var documentHeight = $(document).height();
+		var p1 = $('#navigation').offset().top - visualPaddingInt;
+		var p2 = $('#real-data').offset().top - visualPaddingInt;
+		var p3 = $('#3').offset().top - visualPaddingInt;
+		var p4 = $('#4').offset().top - visualPaddingInt;
+		var p5 = $('#5').offset().top - visualPaddingInt;
+		var aboutSection = $('#other-things').offset().top - visualPaddingInt;
+		var aboutHeight = $('#other-things').height();
+
+
+		if (windowScrollTop >= p1) {
+			$('.secondary').addClass('show');
+			$('#work').addClass('hidden');
+		} else {
+			$('.secondary').removeClass('show');
+			$('#work').removeClass('hidden');
+		}
+
+		if (windowScrollTop >= p1 && windowScrollTop < p2) {
+			$('#project1').addClass('current');
+		} else {
+			$('#project1').removeClass('current');
+		}
+
+		if (windowScrollTop >= p2 && windowScrollTop < p3) {
+			$('#project2').addClass('current');
+		} else {
+			$('#project2').removeClass('current');
+		}
+
+		if (windowScrollTop >= p3 && windowScrollTop < p4) {
+			$('#project3').addClass('current');
+		} else {
+			$('#project3').removeClass('current');
+		}
+
+		if (windowScrollTop >= p4 && windowScrollTop < p5) {
+			$('#project4').addClass('current');
+		} else {
+			$('#project4').removeClass('current');
+		}
+
+		if (windowScrollTop >= p5 && windowScrollTop < aboutSection) {
+			$('#project5').addClass('current');
+		} else {
+			$('#project5').removeClass('current');
+		}
+
+		if (aboutSection - windowScrollTop < aboutHeight) {
+			$('#about').addClass('current');
+			$('#project5').removeClass('current');
+		} else {
+			$('#about').removeClass('current');
+		}
+
+		console.log(windowScrollTop, aboutSection, aboutHeight, documentHeight);
+	});
+
+
+function scrollToAnchor(destinationID){
+
+    var anchorDistanceToTop = $(destinationID).offset().top; // for 'destinationID' this gets the number of pixels from the top
+
+    $('html,body').animate({scrollTop: anchorDistanceToTop - visualPaddingInt}, 800); //this says to scroll up the number of pixels returned by offset, minus the number of pixels returned by visualPadding to leave some breathing room between the destination and the top of the screen
+} 
+
+$("#work").click(function() {
+   scrollToAnchor('#navigation');
+});
+
+$("#landing-link").click(function() {
+	scrollToAnchor('#navigation');
+});
+
+$("#project1").click(function() {
+   scrollToAnchor('#navigation');
+});
+
+$("#project2").click(function() {
+   scrollToAnchor('#real-data');
+});
+
+$("#project3").click(function() {
+   scrollToAnchor('#3');
+});
+
+$("#project4").click(function() {
+   scrollToAnchor('#4');
+});
+
+$("#project5").click(function() {
+   scrollToAnchor('#5');
+});
+
+$("#about").click(function() {
+	scrollToAnchor('#other-things');
+});
+
+</script>
+
+
+
+
+</html>
